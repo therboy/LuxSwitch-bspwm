@@ -1,0 +1,43 @@
+! -----------------------------------------------------------------------------------------------------
+!
+!  \/________________        
+! /     _____________)       
+!/     /      _  _ |         
+!\/\/\/     (O) (O)|         
+!  |           ------,       
+!  |  _       ______/        
+!  | (_      /   \  \        
+!  |        /  ___\_ \       
+!  |        \      / /       
+!__|_________\______/        
+!\______________\./__\       
+! /     .       | \  |       
+! \    /_\   .  |  \ |\      
+! |`\       /_\ |   \| \    
+!    
+! 
+!    Copyright (C) Reza (CyD_Project)  <https://github.com/------>
+!    LICENSE © exception_out_handled, line 11: $LIC not found in stack => No_LICENSE_FOUND (debug_method) !
+!
+! -----------------------------------------------------------------------------------------------------
+
+*foreground:        #e5e0dc
+*background:        #0d0e0d
+
+! Colors 0-15.
+*color0:  #39FF14
+*color1:  #2EFF00
+*color2:  #00FF7F
+*color3:  #00FF00
+*color4:  #00FF33
+*color5:  #00FF6E
+*color6:  #00FF99
+*color7:  #00FFB2
+*color8:  #00FFCC
+*color9:  #00FFE5
+*color10:  #33FFEA
+*color11:  #66FFE0
+*color12:  #99FFD6
+*color13:  #CCFFCC
+*color14:  #E5FFCC
+*color15:  #F0FFF0
