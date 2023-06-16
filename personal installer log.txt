@@ -1,0 +1,1061 @@
+=== START CALAMARES 3.2.61
+2023-06-16 - 10:46:02 [6]: void CalamaresApplication::init()
+    Calamares version: 3.2.61 
+2023-06-16 - 10:46:02 [6]:     .. languages: "ar, as, ast, az, az_AZ, be, bg, bn, ca, ca@valencia, cs_CZ, da, de, el, en, en_GB, eo, es, es_MX, et, eu, fa, fi_FI, fr, fur, gl, he, hi, hr, hu, id, is, it_IT, ja, ko, lt, ml, mr, nb, nl, oc, pl, pt_BR, pt_PT, ro, ru, si, sk, sl, sq, sr, sr@latin, sv, tg, th, tr_TR, uk, vi, zh_CN, zh_TW" 
+2023-06-16 - 10:46:02 [6]: bool CalamaresUtils::initQmlModulesDir()
+    Using Calamares QML directory "/usr/share/calamares/qml" 
+2023-06-16 - 10:46:02 [6]: Calamares::Branding::Branding(const QString&, QObject*)
+    Using Calamares branding file at "/etc/calamares/branding/exodia/branding.desc" 
+2023-06-16 - 10:46:02 [6]: Calamares::Branding::Branding(const QString&, QObject*)
+    Loaded branding component "exodia" 
+2023-06-16 - 10:46:02 [6]:     .. No translation for "tz_" "C" using default (en) 
+2023-06-16 - 10:46:02 [6]:     .. No translation for "calamares_" "C" using default (en) 
+2023-06-16 - 10:46:02 [6]:     .. STARTUP: initSettings, initQmlPath, initBranding done 
+2023-06-16 - 10:46:02 [6]:     .. STARTUP: initModuleManager: module init started 
+2023-06-16 - 10:46:02 [6]: void Calamares::ModuleManager::doInit()
+    Found 48 modules 
+2023-06-16 - 10:46:02 [6]: void CalamaresApplication::initView()
+    STARTUP: initModuleManager: all modules init done 
+2023-06-16 - 10:46:02 [6]: void CalamaresApplication::initView()
+    STARTUP: initJobQueue done 
+2023-06-16 - 10:46:02 [6]: CalamaresWindow::CalamaresWindow(QWidget*)
+    Available desktop QSize(1920, 1080) minimum size QSize(1024, 520) 
+2023-06-16 - 10:46:02 [6]:     .. Proposed window size: 1024 600 
+2023-06-16 - 10:46:02 [6]: void CalamaresApplication::initView()
+    STARTUP: CalamaresWindow created; loadModules started 
+2023-06-16 - 10:46:02 [6]: void Config::initLanguages()
+    Trying to match locale "C" 
+2023-06-16 - 10:46:02 [6]: void Config::initLanguages()
+    Trying to match locale QLocale(C, Default, Default) 
+2023-06-16 - 10:46:02 [6]:     .. Trying to match approximate locale QLocale::C 
+2023-06-16 - 10:46:02 [6]:     .. Trying to match English (US) 
+2023-06-16 - 10:46:02 [6]: void Config::setLocaleIndex(int)
+    Index 14 Selected locale "en" 
+2023-06-16 - 10:46:02 [6]:     .. Loading "calamares-exodia_en" from "/etc/calamares/branding/exodia/lang" 
+2023-06-16 - 10:46:02 [6]:     .. Branding no translation for "en" using default (en) 
+2023-06-16 - 10:46:02 [6]:     .. Loaded QRC translation "tz_" "en" 
+2023-06-16 - 10:46:02 [6]:     .. Loaded QRC translation "calamares_" "en" 
+2023-06-16 - 10:46:02 [2]: CalamaresUtils::GeoIP::Handler::Handler(const QString&, const QString&, const QString&)
+    WARNING: GeoIP style *none* does not do anything. 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "welcome@welcome" loading complete. 
+2023-06-16 - 10:46:03 [6]: QStringList loadLocales(const QString&)
+    Loading locales from "/usr/share/i18n/SUPPORTED" 
+2023-06-16 - 10:46:03 [6]:     ..  Read 492 lines 
+2023-06-16 - 10:46:03 [6]:     ..  After filtering 317 lines 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "locale@locale" loading complete. 
+2023-06-16 - 10:46:03 [6]: KeyboardModelsModel::KeyboardModelsModel(QObject*)
+    Loaded 189 keyboard models 
+2023-06-16 - 10:46:03 [6]: KeyboardPage::KeyboardPage(Config*, QWidget*)
+    Variants now total= 0 selected= -1 
+2023-06-16 - 10:46:03 [6]:     .. Loaded QRC translation "kb_" "en" 
+2023-06-16 - 10:46:03 [6]: void Config::detectCurrentKeyboardLayout()
+    ("pc", "us", "inet(evdev)\"") 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "keyboard@keyboard" loading complete. 
+2023-06-16 - 10:46:03 [6]: CalamaresUtils::Partition::InternalManager::InternalManager()
+    KPMCore backend starting .. 
+2023-06-16 - 10:46:03 [6]: Loaded backend plugin:  "pmsfdiskbackendplugin"
+2023-06-16 - 10:46:03 [6]:     .. Backend @0x556a08c0dcd0 "pmsfdiskbackendplugin" "1" 
+2023-06-16 - 10:46:03 [2]: virtual void PartitionViewStep::setConfigurationMap(const QVariantMap&)
+    WARNING: Partition-module setting *defaultPartitionTableType* is unset, will use gpt for efi or msdos for bios 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "partition@partition" loading complete. 
+2023-06-16 - 10:46:03 [2]: void copyLegacy(const QVariantMap&, const QString&, QVariantMap&, const QString&)
+    WARNING: Legacy *users* key "userShell" overrides hostname-settings. 
+2023-06-16 - 10:46:03 [2]: void copyLegacy(const QVariantMap&, const QString&, QVariantMap&, const QString&)
+    WARNING: Legacy *users* key "setHostname" overrides hostname-settings. 
+2023-06-16 - 10:46:03 [2]: void copyLegacy(const QVariantMap&, const QString&, QVariantMap&, const QString&)
+    WARNING: Legacy *users* key "writeHostsFile" overrides hostname-settings. 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "users@users" loading complete. 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "summary@summary" loading complete. 
+2023-06-16 - 10:46:03 [6]: void Calamares::ModuleManager::loadModules()
+    Module "partition@partition" already loaded. 
+2023-06-16 - 10:46:03 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+    QML import paths: 
+     "/usr/share/calamares/qml" 
+     "/usr/bin" 
+     "qrc:/qt-project.org/imports" 
+     "/usr/lib/qt/qml" 
+2023-06-16 - 10:46:03 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+    QML load on startup, API 2. 
+2023-06-16 - 10:46:03 [2]: QThread::setPriority: Cannot set priority, thread is not running
+
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "machineid@machineid" loading complete. 
+2023-06-16 - 10:46:03 [6]: void Calamares::ModuleManager::loadModules()
+    Module "locale@locale" already loaded. 
+2023-06-16 - 10:46:03 [6]: void Calamares::ModuleManager::loadModules()
+    Module "keyboard@keyboard" already loaded. 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "luksbootkeyfile@luksbootkeyfile" loading complete. 
+2023-06-16 - 10:46:03 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "luksopenswaphookcfg@luksopenswaphookcfg" loading complete. 
+
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "shellprocess@kms" loading complete. 
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "initcpio@initcpio" loading complete. 
+
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "removeuser@removeuser" loading complete. 
+2023-06-16 - 10:46:04 [6]: void Calamares::ModuleManager::loadModules()
+    Module "users@users" already loaded. 
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "shellprocess@shellprocess" loading complete. 
+
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "preservefiles@preservefiles" loading complete. 
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "umount@umount" loading complete. 
+
+2023-06-16 - 10:46:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "finished@finished" loading complete. 
+2023-06-16 - 10:46:04 [6]: void Config::xkbApply()
+    xkbmap selection changed to:  "us" - "" 
+2023-06-16 - 10:46:04 [6]: void CalamaresApplication::initViewSteps()
+    STARTUP: loadModules for all modules done 
+2023-06-16 - 10:46:04 [6]: void Calamares::ModuleManager::checkRequirements()
+    Checking module requirements .. 
+
+2023-06-16 - 10:46:04 [6]: void CalamaresApplication::initViewSteps()
+    STARTUP: Window now visible and ProgressTreeView populated 
+2023-06-16 - 10:46:04 [6]:     .. 8 view steps loaded. 
+2023-06-16 - 10:46:04 [6]:     .. Loaded QRC translation "kb_" "en" 
+2023-06-16 - 10:46:04 [6]: bool GeneralRequirements::checkHasPower()
+    A battery exists, checking for mains power. 
+2023-06-16 - 10:46:04 [6]: void Calamares::SlideshowQML::loadQmlV2Complete()
+    QML component complete, API 2 
+
+2023-06-16 - 10:46:05 [6]: Calamares::RequirementsList GeneralRequirements::checkRequirements()
+    GeneralRequirements output: 
+     storage :   8589934592 
+     enoughStorage :   true 
+     RAM :   1073741824 
+     enoughRam :   true 
+     hasPower :   true 
+     hasInternet :   true 
+     isRoot :   true 
+2023-06-16 - 10:46:05 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 6 requirement results from "welcome" 
+
+2023-06-16 - 10:46:05 [6]: getting temp failed for  "/dev/nvme0n1" :  Success
+2023-06-16 - 10:46:05 [6]: getting powered on time failed for  "/dev/nvme0n1" :  Success
+2023-06-16 - 10:46:05 [6]: getting power cycles failed for  "/dev/nvme0n1" :  Success
+
+2023-06-16 - 10:46:05 [6]:     .. Loading "/etc/calamares/branding/exodia/show.qml" 
+2023-06-16 - 10:46:05 [6]: void Calamares::RequirementsChecker::reportProgress()
+    Remaining modules: 2 
+     "partition" 
+     "welcome" 
+
+2023-06-16 - 10:46:06 [6]: void Calamares::RequirementsChecker::reportProgress()
+    Remaining modules: 1 
+     "partition" 
+
+2023-06-16 - 10:46:07 [6]: smartctl initialization failed for  "/dev/sdb" :  No such file or directory
+2023-06-16 - 10:46:07 [6]: error during smart output parsing for  "/dev/sdb" :  Success
+
+2023-06-16 - 10:46:07 [6]: QList<Device*> PartUtils::getDevices(DeviceType)
+    Removing unsuitable devices: 3 candidates. 
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/nvme0n1") 
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/nvme0n1: PTUUID="367c9a9a-703d-4a3a-9373-9b9117df19f2" PTTYPE="gpt"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/nvme0n1p2") 
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/nvme0n1p2: LABEL_FATBOOT="EFI" LABEL="EFI" UUID="3DC5-54C2" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="77190cf7-5335-8d4a-a9c9-9ed01a9ff715"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/nvme0n1p1") 
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/nvme0n1p1: LABEL="[SWAP]" UUID="e1ca1f78-43f1-4f13-9fce-2209e95a61ad" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="dc371f10-825a-2a44-b93e-2dd329ee8225"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/nvme0n1p3") 
+
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/nvme0n1p3: LABEL="MyLinux" UUID="2ca63cfc-d828-48bf-b160-09541867acf5" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="1075b12f-b179-6c41-a828-c81d0cff1758"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/sda") 
+
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/sda: PTUUID="ed633136-3a0c-42d1-860f-fc05c6b02ae0" PTTYPE="gpt"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/sda1") 
+
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/sda1: LABEL_FATBOOT="EFI" LABEL="EFI" UUID="67E3-17ED" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="EFI System Partition" PARTUUID="8ab33b23-8810-4e95-9c77-cb1f7a54fc8a"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/sda2") 
+
+2023-06-16 - 10:46:07 [6]: void Config::setLocaleIndex(int)
+    Index 16 Selected locale "eo" 
+2023-06-16 - 10:46:07 [6]:     .. Loading "calamares-exodia_eo" from "/etc/calamares/branding/exodia/lang" 
+2023-06-16 - 10:46:07 [6]:     .. Branding no translation for "eo" using default (en) 
+2023-06-16 - 10:46:07 [6]:     .. No translation for "tz_" "eo" using default (en) 
+2023-06-16 - 10:46:07 [6]:     .. Loaded QRC translation "calamares_" "eo" 
+2023-06-16 - 10:46:07 [6]:     .. No translation for "kb_" "eo" using default (en) 
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/sda2: UUID="74d23f01-2c0a-39cb-b129-3954e44cf96e" BLOCK_SIZE="4096" LABEL="REZA" TYPE="hfsplus" PARTLABEL="REZA" PARTUUID="de0089a3-de88-4598-bb26-d91dc91fd5f4"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/sda3") 
+
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/sda3: LABEL="aa" UUID="0027eb8b-2702-4ee7-9653-1661a2df9283" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="root" PARTUUID="026ff052-8772-cf43-872f-3ecb52d96265"
+2023-06-16 - 10:46:07 [6]:     .. Running ("blkid", "/dev/sdb") 
+2023-06-16 - 10:46:07 [6]:     .. Finished. Exit code: 0 output:
+ /dev/sdb: BLOCK_SIZE="2048" UUID="2022-12-11-16-11-53-00" LABEL="Exodia-Wireless202212" TYPE="iso9660" PTUUID="f33c34e8" PTTYPE="dos"
+2023-06-16 - 10:46:07 [6]:     .. Removing device with iso9660 filesystem (probably a CD) on it "/dev/sdb" 
+2023-06-16 - 10:46:07 [6]:     .. there are 2 devices left. 
+2023-06-16 - 10:46:07 [6]: void PartitionCoreModule::doInit()
+    LIST OF DETECTED DEVICES: 
+2023-06-16 - 10:46:07 [6]:     .. node	capacity	name	prettyName 
+2023-06-16 - 10:46:07 [6]:     .. "/dev/nvme0n1" 512105932800 DevName$c4325ac3 DevNamePretty$628cdc36 
+2023-06-16 - 10:46:07 [6]:     .. "/dev/sda" 1000202273280 DevName$359f0d02 DevNamePretty$53a11ea1 
+2023-06-16 - 10:46:07 [6]:     .. 2 devices detected. 
+
+2023-06-16 - 10:46:07 [6]: void Calamares::RequirementsChecker::reportProgress()
+    Remaining modules: 1 
+     "partition" 
+
+2023-06-16 - 10:46:09 [6]: void Calamares::RequirementsChecker::reportProgress()
+    Remaining modules: 1 
+     "partition" 
+
+2023-06-16 - 10:46:10 [6]: void Calamares::RequirementsChecker::reportProgress()
+    Remaining modules: 1 
+     "partition" 
+
+2023-06-16 - 10:46:11 [6]: void Calamares::RequirementsChecker::reportProgress()
+    Remaining modules: 1 
+     "partition" 
+
+2023-06-16 - 10:46:12 [6]:     .. Running ("blkid", "-s", "TYPE", "-o", "value", "/dev/nvme0n1p3") 
+2023-06-16 - 10:46:12 [6]:     .. Finished. Exit code: 0 output:
+ ext4
+2023-06-16 - 10:46:12 [6]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+    Checking device "/dev/nvme0n1p3" for fstab (fs= "ext4" ) 
+2023-06-16 - 10:46:12 [6]:     .. Running ("mount", "-o", "ro,noload", "/dev/nvme0n1p3", "/tmp/calamares-raVRXd") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("sync") 
+
+2023-06-16 - 10:46:12 [6]:     .. got 11 fstab entries from 11 lines in "/tmp/calamares-raVRXd/etc/fstab" 
+2023-06-16 - 10:46:12 [6]:     .. Running ("umount", "-R", "/tmp/calamares-raVRXd") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("sync") 
+2023-06-16 - 10:46:12 [6]: bool PartUtils::canBeResized(Partition*, const Logger::Once&)
+    Partition "/dev/nvme0n1p3" authorized for resize + autopartition install. 
+2023-06-16 - 10:46:12 [6]:     .. Running ("blkid", "-s", "TYPE", "-o", "value", "/dev/sda3") 
+
+2023-06-16 - 10:46:12 [6]:     .. Finished. Exit code: 0 output:
+ ext4
+2023-06-16 - 10:46:12 [6]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+    Checking device "/dev/sda3" for fstab (fs= "ext4" ) 
+2023-06-16 - 10:46:12 [6]:     .. Running ("mount", "-o", "ro,noload", "/dev/sda3", "/tmp/calamares-lHaKpg") 
+
+2023-06-16 - 10:46:12 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("sync") 
+
+2023-06-16 - 10:46:12 [6]:     .. got 14 fstab entries from 14 lines in "/tmp/calamares-lHaKpg/etc/fstab" 
+2023-06-16 - 10:46:12 [6]:     .. Running ("umount", "-R", "/tmp/calamares-lHaKpg") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 10:46:12 [6]:     .. Running ("sync") 
+2023-06-16 - 10:46:12 [6]:     ..  Partition "/dev/sda3" authorized for resize + autopartition install. 
+2023-06-16 - 10:46:12 [6]:     ..  os-prober lines after cleanup: 
+     "/dev/nvme0n1p3:0xPersonal (rolling):0xVoker:linux" 
+     "/dev/sda3:Arch Linux (rolling):Arch:linux" 
+
+2023-06-16 - 10:46:12 [6]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    system is EFI and new EFI system partition has been found. 
+2023-06-16 - 10:46:12 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 1 requirement results from "partition" 
+2023-06-16 - 10:46:12 [6]: bool ChoicePage::calculateNextEnabled() const
+    No partitioning choice has been made yet 
+2023-06-16 - 10:46:12 [6]: void ChoicePage::updateDeviceStatePreview()
+    Updating partitioning state widgets. 
+2023-06-16 - 10:46:12 [6]: void ChoicePage::setupActions()
+    Setting up actions for "/dev/nvme0n1" with 1 entries. 
+2023-06-16 - 10:46:12 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 2097880064 "(1GiB)" for "/dev/nvme0n1p2" length: 4098014 sectorsUsed: 592 fsType: "fat32" 
+2023-06-16 - 10:46:12 [6]:     ..  Checking if "/dev/nvme0n1p2" can be replaced. 
+2023-06-16 - 10:46:12 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 2098183168 "(1GiB)" 
+2023-06-16 - 10:46:12 [6]:     ..  Partition "/dev/nvme0n1p1" authorized for resize + autopartition install. 
+2023-06-16 - 10:46:12 [6]:     .. contains resizable "/dev/nvme0n1p1" 
+2023-06-16 - 10:46:12 [6]:     ..  Checking if "/dev/nvme0n1p1" can be replaced. 
+2023-06-16 - 10:46:12 [6]:     ..  Partition "/dev/nvme0n1p1" authorized for replace install. 
+2023-06-16 - 10:46:12 [6]:     .. contains replaceable "/dev/nvme0n1p1" 
+2023-06-16 - 10:46:12 [6]:     ..  Partition "/dev/nvme0n1p3" authorized for resize + autopartition install. 
+2023-06-16 - 10:46:12 [6]:     .. contains resizable "/dev/nvme0n1p3" 
+2023-06-16 - 10:46:12 [6]:     ..  Checking if "/dev/nvme0n1p3" can be replaced. 
+2023-06-16 - 10:46:12 [6]:     ..  Partition "/dev/nvme0n1p3" authorized for replace install. 
+2023-06-16 - 10:46:12 [6]:     .. contains replaceable "/dev/nvme0n1p3" 
+2023-06-16 - 10:46:12 [6]: ChoicePage::setupActions()::<lambda()>
+    Setting texts for 1 non-empty osprober entry 
+2023-06-16 - 10:46:12 [6]: void ChoicePage::continueApplyDeviceChoice()
+    Previous device -1 new device 0 
+2023-06-16 - 10:46:12 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+    Prev -1 InstallChoice Config::NoChoice "none" 
+2023-06-16 - 10:46:12 [6]: bool ChoicePage::calculateNextEnabled() const
+    No partitioning choice has been made yet 
+2023-06-16 - 10:46:12 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+    Updating partitioning preview widgets. 
+2023-06-16 - 10:46:12 [6]: bool ChoicePage::calculateNextEnabled() const
+    No partitioning choice has been made yet 
+2023-06-16 - 10:46:12 [6]: bool ChoicePage::calculateNextEnabled() const
+    No partitioning choice has been made yet 
+2023-06-16 - 10:46:12 [6]: void Calamares::RequirementsChecker::finished()
+    All requirements have been checked. 
+2023-06-16 - 10:46:12 [6]: void Calamares::RequirementsModel::describe() const
+    Requirements model has 7 items 
+2023-06-16 - 10:46:12 [6]:     .. requirement 0 "storage" satisfied? true mandatory? false 
+2023-06-16 - 10:46:12 [6]:     .. requirement 1 "ram" satisfied? true mandatory? true 
+2023-06-16 - 10:46:12 [6]:     .. requirement 2 "power" satisfied? true mandatory? false 
+2023-06-16 - 10:46:12 [6]:     .. requirement 3 "internet" satisfied? true mandatory? false 
+2023-06-16 - 10:46:12 [6]:     .. requirement 4 "root" satisfied? true mandatory? true 
+2023-06-16 - 10:46:12 [6]:     .. requirement 5 "screen" satisfied? true mandatory? false 
+2023-06-16 - 10:46:12 [6]:     .. requirement 6 "partitions" satisfied? true mandatory? true 
+
+2023-06-16 - 10:46:22 [6]: void Config::setLocaleIndex(int)
+    Index 14 Selected locale "en" 
+2023-06-16 - 10:46:22 [6]:     .. Loading "calamares-exodia_en" from "/etc/calamares/branding/exodia/lang" 
+2023-06-16 - 10:46:22 [6]:     .. Branding no translation for "en" using default (en) 
+2023-06-16 - 10:46:22 [6]:     .. Loaded QRC translation "tz_" "en" 
+2023-06-16 - 10:46:22 [6]:     .. Loaded QRC translation "calamares_" "en" 
+2023-06-16 - 10:46:22 [6]:     .. Loaded QRC translation "kb_" "en" 
+2023-06-16 - 10:46:22 [6]: ChoicePage::setupActions()::<lambda()>
+    Setting texts for 1 non-empty osprober entry 
+
+2023-06-16 - 10:46:24 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+    Mapping "en" in "IR" to locale. 
+
+2023-06-16 - 10:46:24 [6]:     .. Got best match for "en" as "en_ZW.UTF-8" 
+2023-06-16 - 10:46:24 [6]:     .. Got best match for "en_IR" as "en_IN" 
+2023-06-16 - 10:46:24 [6]:     .. Got best match for "en_US" as "en_US.UTF-8" 
+
+2023-06-16 - 14:16:24 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+    Mapping "en" in "IR" to locale. 
+2023-06-16 - 14:16:24 [6]:     .. Got best match for "en" as "en_ZW.UTF-8" 
+2023-06-16 - 14:16:24 [6]:     .. Got best match for "en_IR" as "en_IN" 
+2023-06-16 - 14:16:24 [6]:     .. Got best match for "en_US" as "en_US.UTF-8" 
+2023-06-16 - 14:16:24 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+    Mapping "en" in "IR" to locale. 
+2023-06-16 - 14:16:24 [6]:     .. Got best match for "en" as "en_ZW.UTF-8" 
+2023-06-16 - 14:16:24 [6]:     .. Got best match for "en_IR" as "en_IN" 
+2023-06-16 - 14:16:24 [6]:     .. Got best match for "en_US" as "en_US.UTF-8" 
+
+2023-06-16 - 14:16:27 [6]: void Config::guessLocaleKeyboardLayout()
+    Got locale language "en_US.UTF-8" 
+2023-06-16 - 14:16:27 [6]:     .. looking for locale part "US" 
+2023-06-16 - 14:16:27 [6]:     .. matched "us" 
+2023-06-16 - 14:16:27 [6]: void guessLayout(const QStringList&, KeyboardLayoutModel*, KeyboardVariantsModel*)
+    Next level: "en" 
+
+2023-06-16 - 14:16:28 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+    Mapping "en_US.UTF-8" in "IR" to locale. 
+2023-06-16 - 14:16:28 [6]:     .. Got best match for "en_US.UTF-8" as "en_US.UTF-8" 
+
+2023-06-16 - 14:16:41 [6]: void Config::guessLocaleKeyboardLayout()
+    Got locale language "en_US.UTF-8" 
+2023-06-16 - 14:16:41 [6]:     .. looking for locale part "US" 
+2023-06-16 - 14:16:41 [6]:     .. matched "us" 
+2023-06-16 - 14:16:41 [6]: void guessLayout(const QStringList&, KeyboardLayoutModel*, KeyboardVariantsModel*)
+    Next level: "en" 
+
+2023-06-16 - 14:16:52 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+    Prev -1 InstallChoice Config::Erase "erase" 
+2023-06-16 - 14:16:52 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+    CreatePartitionTableJob::createTable trying to make table for device "/dev/nvme0n1" 
+
+2023-06-16 - 14:16:53 [6]: void PartitionCoreModule::dumpQueue() const
+    # Queue: 
+2023-06-16 - 14:16:53 [6]:     .. ## Device: "/dev/nvme0n1" 
+2023-06-16 - 14:16:53 [6]:     .. - CreatePartitionTableJob 
+2023-06-16 - 14:16:53 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:16:53 [6]:     .. - SetPartFlagsJob 
+2023-06-16 - 14:16:53 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:16:53 [6]:     .. ## Device: "/dev/sda" 
+2023-06-16 - 14:16:53 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+    Updating partitioning preview widgets. 
+
+2023-06-16 - 14:16:58 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+    Prev -1 InstallChoice Config::Erase "erase" 
+2023-06-16 - 14:16:58 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+    Updating partitioning preview widgets. 
+2023-06-16 - 14:16:58 [6]: getting temp failed for  "/dev/nvme0n1" :  Success
+2023-06-16 - 14:16:58 [6]: getting powered on time failed for  "/dev/nvme0n1" :  Success
+2023-06-16 - 14:16:58 [6]: getting power cycles failed for  "/dev/nvme0n1" :  Success
+
+2023-06-16 - 14:16:58 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+    CreatePartitionTableJob::createTable trying to make table for device "/dev/nvme0n1" 
+
+2023-06-16 - 14:16:58 [6]: qint64 PartitionActions::swapSuggestion(qint64, Config::SwapChoice)
+    Suggested swap size: 8 GiB 
+
+2023-06-16 - 14:16:58 [6]: void PartitionCoreModule::dumpQueue() const
+    # Queue: 
+2023-06-16 - 14:16:58 [6]:     .. ## Device: "/dev/nvme0n1" 
+2023-06-16 - 14:16:58 [6]:     .. - CreatePartitionTableJob 
+2023-06-16 - 14:16:58 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:16:58 [6]:     .. - SetPartFlagsJob 
+2023-06-16 - 14:16:58 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:16:58 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:16:58 [6]:     .. ## Device: "/dev/sda" 
+
+2023-06-16 - 14:17:04 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+    Prev -1 InstallChoice Config::Erase "erase" 
+2023-06-16 - 14:17:04 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+    Updating partitioning preview widgets. 
+2023-06-16 - 14:17:04 [6]: getting temp failed for  "/dev/nvme0n1" :  Success
+2023-06-16 - 14:17:04 [6]: getting powered on time failed for  "/dev/nvme0n1" :  Success
+2023-06-16 - 14:17:04 [6]: getting power cycles failed for  "/dev/nvme0n1" :  Success
+
+2023-06-16 - 14:17:04 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+    CreatePartitionTableJob::createTable trying to make table for device "/dev/nvme0n1" 
+
+2023-06-16 - 14:17:04 [6]: qint64 PartitionActions::swapSuggestion(qint64, Config::SwapChoice)
+    Suggested swap size: 8 GiB 
+
+2023-06-16 - 14:17:04 [6]: void PartitionCoreModule::dumpQueue() const
+    # Queue: 
+2023-06-16 - 14:17:04 [6]:     .. ## Device: "/dev/nvme0n1" 
+2023-06-16 - 14:17:04 [6]:     .. - CreatePartitionTableJob 
+2023-06-16 - 14:17:04 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:17:04 [6]:     .. - SetPartFlagsJob 
+2023-06-16 - 14:17:04 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:17:04 [6]:     .. - CreatePartitionJob 
+2023-06-16 - 14:17:04 [6]:     .. ## Device: "/dev/sda" 
+
+2023-06-16 - 14:17:34 [2]: QObject::setParent: Cannot set parent, new parent is in a different thread
+2023-06-16 - 14:17:34 [6]: virtual QString PartitionViewStep::prettyStatus() const
+    Summary for Partition 1 Config::Erase 
+2023-06-16 - 14:17:34 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+    Checking LVM use on 2 devices 
+2023-06-16 - 14:17:34 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/nvme0n1" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "EFI" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "xfs" 
+     fsName :   "xfs" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "swap" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/sda" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda1" "/dev/sda1" 
+     partlabel :   "EFI System Partition" 
+     partition-uuid (partuuid) :   "PartUUID$17ab23fd" 
+     parttype :   "C12A7328-F81F-11D2-BA4B-00A0C93EC93B" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$74f7dd02" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda2" "/dev/sda2" 
+     partlabel :   "REZA" 
+     partition-uuid (partuuid) :   "PartUUID$fa7a4e1b" 
+     parttype :   "48465300-0000-11AA-AA11-00306543ECAC" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "hfsplus" 
+     fsName :   "hfsplus" 
+     filesystem-uuid (uuid) :   "FSUUID$880b954e" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda3" "/dev/sda3" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$f44f2f9d" 
+     parttype :   "0FC63DAF-8483-4772-8E79-3D69D8477DE4" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     filesystem-uuid (uuid) :   "FSUUID$aa7f4feb" 
+     claimed :   "false" 
+
+2023-06-16 - 14:17:34 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/nvme0n1" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "EFI" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "xfs" 
+     fsName :   "xfs" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "swap" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/sda" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda1" "/dev/sda1" 
+     partlabel :   "EFI System Partition" 
+     partition-uuid (partuuid) :   "PartUUID$17ab23fd" 
+     parttype :   "C12A7328-F81F-11D2-BA4B-00A0C93EC93B" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$74f7dd02" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda2" "/dev/sda2" 
+     partlabel :   "REZA" 
+     partition-uuid (partuuid) :   "PartUUID$fa7a4e1b" 
+     parttype :   "48465300-0000-11AA-AA11-00306543ECAC" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "hfsplus" 
+     fsName :   "hfsplus" 
+     filesystem-uuid (uuid) :   "FSUUID$880b954e" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda3" "/dev/sda3" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$f44f2f9d" 
+     parttype :   "0FC63DAF-8483-4772-8E79-3D69D8477DE4" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     filesystem-uuid (uuid) :   "FSUUID$aa7f4feb" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [2]: QLayout: Attempting to add QLayout "" to QWidget "", which already has a layout
+2023-06-16 - 14:17:34 [2]: QObject::setParent: Cannot set parent, new parent is in a different thread
+2023-06-16 - 14:17:34 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+    Checking LVM use on 2 devices 
+2023-06-16 - 14:17:34 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/nvme0n1" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "EFI" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "xfs" 
+     fsName :   "xfs" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "swap" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/sda" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda1" "/dev/sda1" 
+     partlabel :   "EFI System Partition" 
+     partition-uuid (partuuid) :   "PartUUID$17ab23fd" 
+     parttype :   "C12A7328-F81F-11D2-BA4B-00A0C93EC93B" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$74f7dd02" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda2" "/dev/sda2" 
+     partlabel :   "REZA" 
+     partition-uuid (partuuid) :   "PartUUID$fa7a4e1b" 
+     parttype :   "48465300-0000-11AA-AA11-00306543ECAC" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "hfsplus" 
+     fsName :   "hfsplus" 
+     filesystem-uuid (uuid) :   "FSUUID$880b954e" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda3" "/dev/sda3" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$f44f2f9d" 
+     parttype :   "0FC63DAF-8483-4772-8E79-3D69D8477DE4" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     filesystem-uuid (uuid) :   "FSUUID$aa7f4feb" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/nvme0n1" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "EFI" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "xfs" 
+     fsName :   "xfs" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "swap" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "true" 
+2023-06-16 - 14:17:34 [6]:     .. partitions on "/dev/sda" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda1" "/dev/sda1" 
+     partlabel :   "EFI System Partition" 
+     partition-uuid (partuuid) :   "PartUUID$17ab23fd" 
+     parttype :   "C12A7328-F81F-11D2-BA4B-00A0C93EC93B" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$74f7dd02" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda2" "/dev/sda2" 
+     partlabel :   "REZA" 
+     partition-uuid (partuuid) :   "PartUUID$fa7a4e1b" 
+     parttype :   "48465300-0000-11AA-AA11-00306543ECAC" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "hfsplus" 
+     fsName :   "hfsplus" 
+     filesystem-uuid (uuid) :   "FSUUID$880b954e" 
+     claimed :   "false" 
+2023-06-16 - 14:17:34 [6]:     ..  mapping for "/dev/sda3" "/dev/sda3" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$f44f2f9d" 
+     parttype :   "0FC63DAF-8483-4772-8E79-3D69D8477DE4" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     filesystem-uuid (uuid) :   "FSUUID$aa7f4feb" 
+     claimed :   "false" 
+
+2023-06-16 - 14:17:36 [6]: QML Component (default slideshow) activated
+2023-06-16 - 14:17:36 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+    Checking LVM use on 2 devices 
+2023-06-16 - 14:17:36 [6]: void Calamares::JobThread::finalize()
+    There are 39 jobs, total weight 36 
+2023-06-16 - 14:17:36 [6]:     .. Job 1 "Manage auto-mount settings" +wt 0.1 tot.wt 0.1 
+2023-06-16 - 14:17:36 [6]:     .. Job 2 "Clear all temporary mounts." +wt 0.1 tot.wt 0.2 
+2023-06-16 - 14:17:36 [6]:     .. Job 3 "Clear mounts for partitioning operations on /dev/nvme0n1" +wt 0.1 tot.wt 0.3 
+2023-06-16 - 14:17:36 [6]:     .. Job 4 "Create new gpt partition table on /dev/nvme0n1." +wt 0.1 tot.wt 0.4 
+2023-06-16 - 14:17:36 [6]:     .. Job 5 "Create new 512MiB partition on /dev/nvme0n1 (INTEL SSDPEKNU512GZ) with entries EFI." +wt 0.1 tot.wt 0.5 
+2023-06-16 - 14:17:36 [6]:     .. Job 6 "Set flags on 512MiB fat32 partition." +wt 0.1 tot.wt 0.6 
+2023-06-16 - 14:17:36 [6]:     .. Job 7 "Create new 478857MiB partition on /dev/nvme0n1 (INTEL SSDPEKNU512GZ) with entries root." +wt 0.1 tot.wt 0.7 
+2023-06-16 - 14:17:36 [6]:     .. Job 8 "Create new 9011MiB partition on /dev/nvme0n1 (INTEL SSDPEKNU512GZ) with entries swap." +wt 0.1 tot.wt 0.8 
+2023-06-16 - 14:17:36 [6]:     .. Job 9 "Set partition information" +wt 0.1 tot.wt 0.9 
+2023-06-16 - 14:17:36 [6]:     .. Job 10 "Manage auto-mount settings" +wt 0.1 tot.wt 1 
+2023-06-16 - 14:17:36 [6]:     .. Job 11 "mount" +wt 1 tot.wt 2 
+2023-06-16 - 14:17:36 [6]:     .. Job 12 "unpackfs" +wt 12 tot.wt 14 
+2023-06-16 - 14:17:36 [6]:     .. Job 13 "Generate machine-id." +wt 1 tot.wt 15 
+2023-06-16 - 14:17:36 [6]:     .. Job 14 "fstab" +wt 1 tot.wt 16 
+2023-06-16 - 14:17:36 [6]:     .. Job 15 "Set timezone to Asia/Tehran" +wt 1 tot.wt 17 
+2023-06-16 - 14:17:36 [6]:     .. Job 16 "Set keyboard model to pc105, layout to us-" +wt 1 tot.wt 18 
+2023-06-16 - 14:17:36 [6]:     .. Job 17 "localecfg" +wt 1 tot.wt 19 
+2023-06-16 - 14:17:36 [6]:     .. Job 18 "Configuring LUKS key file." +wt 1 tot.wt 20 
+2023-06-16 - 14:17:36 [6]:     .. Job 19 "Configuring encrypted swap." +wt 1 tot.wt 21 
+2023-06-16 - 14:17:36 [6]:     .. Job 20 "initcpiocfg" +wt 1 tot.wt 22 
+2023-06-16 - 14:17:36 [6]:     .. Job 21 "Adding kernel graphics drivers..." +wt 1 tot.wt 23 
+2023-06-16 - 14:17:36 [6]:     .. Job 22 "Creating initramfs with mkinitcpio." +wt 1 tot.wt 24 
+2023-06-16 - 14:17:36 [6]:     .. Job 23 "Remove live user from target system" +wt 1 tot.wt 25 
+2023-06-16 - 14:17:36 [6]:     .. Job 24 "Configure <pre>sudo</pre> users." +wt 0.166667 tot.wt 25.1667 
+2023-06-16 - 14:17:36 [6]:     .. Job 25 "Preparing groups." +wt 0.166667 tot.wt 25.3333 
+2023-06-16 - 14:17:36 [6]:     .. Job 26 "Create user rboy" +wt 0.166667 tot.wt 25.5 
+2023-06-16 - 14:17:36 [6]:     .. Job 27 "Set password for user rboy" +wt 0.166667 tot.wt 25.6667 
+2023-06-16 - 14:17:36 [6]:     .. Job 28 "Set password for user root" +wt 0.166667 tot.wt 25.8333 
+2023-06-16 - 14:17:36 [6]:     .. Job 29 "Set hostname fx506lhb" +wt 0.166667 tot.wt 26 
+2023-06-16 - 14:17:36 [6]:     .. Job 30 "displaymanager" +wt 1 tot.wt 27 
+2023-06-16 - 14:17:36 [6]:     .. Job 31 "networkcfg" +wt 1 tot.wt 28 
+2023-06-16 - 14:17:36 [6]:     .. Job 32 "hwclock" +wt 1 tot.wt 29 
+2023-06-16 - 14:17:36 [6]:     .. Job 33 "services-systemd" +wt 1 tot.wt 30 
+2023-06-16 - 14:17:36 [6]:     .. Job 34 "packages" +wt 1 tot.wt 31 
+2023-06-16 - 14:17:36 [6]:     .. Job 35 "Settings up configuration and cleaning up... " +wt 1 tot.wt 32 
+2023-06-16 - 14:17:36 [6]:     .. Job 36 "grubcfg" +wt 1 tot.wt 33 
+2023-06-16 - 14:17:36 [6]:     .. Job 37 "bootloader" +wt 1 tot.wt 34 
+2023-06-16 - 14:17:36 [6]:     .. Job 38 "Saving files for later ..." +wt 1 tot.wt 35 
+2023-06-16 - 14:17:36 [6]:     .. Job 39 "Unmount file systems." +wt 1 tot.wt 36 
+2023-06-16 - 14:17:36 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Manage auto-mount settings" ( 1 / 39 ) 
+2023-06-16 - 14:17:36 [6]: virtual Calamares::JobResult AutoMountManagementJob::exec()
+    Set automount to disable 
+2023-06-16 - 14:17:36 [6]: void CalamaresUtils::Partition::querySolidAutoMount(QDBusConnection&, AutoMountInfo&)
+    Solid not available: "Not connected to D-Bus server" 
+2023-06-16 - 14:17:36 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Clear all temporary mounts." ( 2 / 39 ) 
+2023-06-16 - 14:17:36 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Clear mounts for partitioning operations on /dev/nvme0n1" ( 3 / 39 ) 
+
+2023-06-16 - 14:17:36 [6]: QStringList getPartitionsForDevice(const QString&)
+    Reading from "/proc/partitions" looking for "nvme0n1" 
+
+2023-06-16 - 14:17:36 [6]: virtual Calamares::JobResult ClearMountsJob::exec()
+    ClearMountsJob finished. Here's what was done: 
+2023-06-16 - 14:17:36 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:17:36 [6]:     .. Running ("sync") 
+2023-06-16 - 14:17:36 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new gpt partition table on /dev/nvme0n1." ( 4 / 39 ) 
+2023-06-16 - 14:17:36 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    Creating new partition table of type "gpt" , uncommitted partitions: 
+2023-06-16 - 14:17:36 [6]:     .. "unallocated" 
+2023-06-16 - 14:17:36 [6]:     .. "New Partition" 
+2023-06-16 - 14:17:36 [6]:     .. "New Partition" 
+2023-06-16 - 14:17:36 [6]:     .. "New Partition" 
+2023-06-16 - 14:17:36 [6]:     .. Running ("lsblk") 
+2023-06-16 - 14:17:36 [6]:     .. Finished. Exit code: 0 output:
+ NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0   5.6G  1 loop /run/archiso/airootfs
+sda           8:0    0 931.5G  0 disk 
+|-sda1        8:1    0   200M  0 part 
+|-sda2        8:2    0 793.5G  0 part 
+`-sda3        8:3    0 137.8G  0 part 
+sdb           8:16   1  14.5G  0 disk 
+|-sdb1        8:17   1   5.8G  0 part /run/archiso/bootmnt
+`-sdb2        8:18   1   165M  0 part 
+nvme0n1     259:0    0 476.9G  0 disk 
+|-nvme0n1p1 259:1    0    16G  0 part 
+|-nvme0n1p2 259:2    0     2G  0 part 
+`-nvme0n1p3 259:3    0   459G  0 part
+2023-06-16 - 14:17:36 [6]:     .. lsblk output:
+ NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0   5.6G  1 loop /run/archiso/airootfs
+sda           8:0    0 931.5G  0 disk 
+|-sda1        8:1    0   200M  0 part 
+|-sda2        8:2    0 793.5G  0 part 
+`-sda3        8:3    0 137.8G  0 part 
+sdb           8:16   1  14.5G  0 disk 
+|-sdb1        8:17   1   5.8G  0 part /run/archiso/bootmnt
+`-sdb2        8:18   1   165M  0 part 
+nvme0n1     259:0    0 476.9G  0 disk 
+|-nvme0n1p1 259:1    0    16G  0 part 
+|-nvme0n1p2 259:2    0     2G  0 part 
+`-nvme0n1p3 259:3    0   459G  0 part
+2023-06-16 - 14:17:36 [6]:     .. Running ("mount") 
+2023-06-16 - 14:17:36 [6]:     .. Finished. Exit code: 0 output:
+ proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sys on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+dev on /dev type devtmpfs (rw,nosuid,relatime,size=3941220k,nr_inodes=985305,mode=755,inode64)
+run on /run type tmpfs (rw,nosuid,nodev,relatime,mode=755,inode64)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+/dev/sdb1 on /run/archiso/bootmnt type iso9660 (ro,relatime,nojoliet,check=s,map=n,blocksize=2048,iocharset=utf8)
+cowspace on /run/archiso/cowspace type tmpfs (rw,relatime,size=5242880k,mode=755,inode64)
+/dev/loop0 on /run/archiso/airootfs type squashfs (ro,relatime,errors=continue)
+airootfs on / type overlay (rw,relatime,lowerdir=/run/archiso/airootfs,upperdir=/run/archiso/cowspace/persistent_Exodia-Wireless202212/x86_64/upperdir,workdir=/run/archiso/cowspace/persistent_Exodia-Wireless202212/x86_64/workdir)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=33,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=13143)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,size=3985008k,nr_inodes=1048576,inode64)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+ramfs on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+ramfs on /run/credentials/systemd-tmpfiles-setup-dev.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+ramfs on /etc/pacman.d/gnupg type ramfs (rw,relatime)
+ramfs on /run/credentials/systemd-tmpfiles-setup.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+ramfs on /run/credentials/systemd-sysctl.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=797000k,nr_inodes=199250,mode=700,uid=1000,gid=1000,inode64)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+2023-06-16 - 14:17:36 [6]:     .. mount output:
+ proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sys on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+dev on /dev type devtmpfs (rw,nosuid,relatime,size=3941220k,nr_inodes=985305,mode=755,inode64)
+run on /run type tmpfs (rw,nosuid,nodev,relatime,mode=755,inode64)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+/dev/sdb1 on /run/archiso/bootmnt type iso9660 (ro,relatime,nojoliet,check=s,map=n,blocksize=2048,iocharset=utf8)
+cowspace on /run/archiso/cowspace type tmpfs (rw,relatime,size=5242880k,mode=755,inode64)
+/dev/loop0 on /run/archiso/airootfs type squashfs (ro,relatime,errors=continue)
+airootfs on / type overlay (rw,relatime,lowerdir=/run/archiso/airootfs,upperdir=/run/archiso/cowspace/persistent_Exodia-Wireless202212/x86_64/upperdir,workdir=/run/archiso/cowspace/persistent_Exodia-Wireless202212/x86_64/workdir)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=33,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=13143)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,size=3985008k,nr_inodes=1048576,inode64)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+ramfs on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+ramfs on /run/credentials/systemd-tmpfiles-setup-dev.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+ramfs on /etc/pacman.d/gnupg type ramfs (rw,relatime)
+ramfs on /run/credentials/systemd-tmpfiles-setup.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+ramfs on /run/credentials/systemd-sysctl.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=797000k,nr_inodes=199250,mode=700,uid=1000,gid=1000,inode64)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+
+2023-06-16 - 14:17:37 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new 512MiB partition on /dev/nvme0n1 (INTEL SSDPEKNU512GZ) with entries EFI." ( 5 / 39 ) 
+
+2023-06-16 - 14:17:41 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:17:43 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set flags on partition /dev/nvme0n1p1." ( 6 / 39 ) 
+2023-06-16 - 14:17:43 [6]: virtual Calamares::JobResult SetPartFlagsJob::exec()
+    Setting flags on "/dev/nvme0n1" partition "/dev/nvme0n1p1" 
+     "boot" 
+
+2023-06-16 - 14:17:45 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new 478857MiB partition on /dev/nvme0n1 (INTEL SSDPEKNU512GZ) with entries root." ( 7 / 39 ) 
+
+2023-06-16 - 14:17:45 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:17:50 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:17:55 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:18:00 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:18:05 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:18:08 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new 9011MiB partition on /dev/nvme0n1 (INTEL SSDPEKNU512GZ) with entries swap." ( 8 / 39 ) 
+
+2023-06-16 - 14:18:10 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:18:13 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set partition information" ( 9 / 39 ) 
+2023-06-16 - 14:18:13 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+2023-06-16 - 14:18:13 [6]:     .. partitions on "/dev/nvme0n1" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$43393305" 
+     claimed :   "false" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "/dev/nvme0n1p1" "/dev/nvme0n1p1" 
+     partlabel :   "EFI" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$289f1083" 
+     claimed :   "true" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "/dev/nvme0n1p2" "/dev/nvme0n1p2" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "xfs" 
+     fsName :   "xfs" 
+     filesystem-uuid (uuid) :   "FSUUID$a72a2697" 
+     claimed :   "true" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "/dev/nvme0n1p3" "/dev/nvme0n1p3" 
+     partlabel :   "swap" 
+     partition-uuid (partuuid) :   "PartUUID$a65cea17" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     filesystem-uuid (uuid) :   "FSUUID$babaebf0" 
+     claimed :   "true" 
+2023-06-16 - 14:18:13 [6]:     .. partitions on "/dev/sda" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "/dev/sda1" "/dev/sda1" 
+     partlabel :   "EFI System Partition" 
+     partition-uuid (partuuid) :   "PartUUID$17ab23fd" 
+     parttype :   "C12A7328-F81F-11D2-BA4B-00A0C93EC93B" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$74f7dd02" 
+     claimed :   "false" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "/dev/sda2" "/dev/sda2" 
+     partlabel :   "REZA" 
+     partition-uuid (partuuid) :   "PartUUID$fa7a4e1b" 
+     parttype :   "48465300-0000-11AA-AA11-00306543ECAC" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "hfsplus" 
+     fsName :   "hfsplus" 
+     filesystem-uuid (uuid) :   "FSUUID$880b954e" 
+     claimed :   "false" 
+2023-06-16 - 14:18:13 [6]:     ..  mapping for "/dev/sda3" "/dev/sda3" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$f44f2f9d" 
+     parttype :   "0FC63DAF-8483-4772-8E79-3D69D8477DE4" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     filesystem-uuid (uuid) :   "FSUUID$aa7f4feb" 
+     claimed :   "false" 
+2023-06-16 - 14:18:13 [6]: virtual Calamares::JobResult FillGlobalStorageJob::exec()
+    Saving partition information map to GlobalStorage["partitions"] 
+2023-06-16 - 14:18:13 [6]: virtual Calamares::JobResult FillGlobalStorageJob::exec()
+    FillGlobalStorageJob writing empty bootLoader value 
+2023-06-16 - 14:18:13 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Manage auto-mount settings" ( 10 / 39 ) 
+2023-06-16 - 14:18:13 [6]: virtual Calamares::JobResult AutoMountManagementJob::exec()
+    Restore automount settings 
+2023-06-16 - 14:18:13 [6]: virtual void Calamares::JobThread::run()
+    Starting job "mount" ( 11 / 39 ) 
+
+2023-06-16 - 14:18:13 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/mount/main.py" 
+2023-06-16 - 14:18:13 [6]: [PYTHON JOB]: Found gettext "en_US" in "/usr/share/locale/en_US" 
+2023-06-16 - 14:18:13 [6]:     .. Job description from pretty_name "mount" = "Mounting partitions." 
+2023-06-16 - 14:18:13 [6]:     .. Running ("mount", "-t", "xfs", "/dev/nvme0n1p2", "/tmp/calamares-root-ky4r9hc8/") 
+2023-06-16 - 14:18:13 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-t", "vfat", "/dev/nvme0n1p1", "/tmp/calamares-root-ky4r9hc8/boot/efi") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-o", "bind", "/dev", "/tmp/calamares-root-ky4r9hc8/dev") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-t", "proc", "proc", "/tmp/calamares-root-ky4r9hc8/proc") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-t", "tmpfs", "tmpfs", "/tmp/calamares-root-ky4r9hc8/run") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-o", "bind", "/run/udev", "/tmp/calamares-root-ky4r9hc8/run/udev") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-t", "sysfs", "sys", "/tmp/calamares-root-ky4r9hc8/sys") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-t", "efivarfs", "efivarfs", "/tmp/calamares-root-ky4r9hc8/sys/firmware/efi/efivars") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]: virtual void Calamares::JobThread::run()
+    Starting job "unpackfs" ( 12 / 39 ) 
+2023-06-16 - 14:18:14 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/unpackfs/main.py" 
+2023-06-16 - 14:18:14 [6]: [PYTHON JOB]: Found gettext "en_US" in "/usr/share/locale/en_US" 
+2023-06-16 - 14:18:14 [6]:     .. Job description from pretty_name "unpackfs" = "Filling up filesystems." 
+2023-06-16 - 14:18:14 [6]:     .. Running ("mount", "-t", "squashfs", "-o", "loop", "/run/archiso/bootmnt/arch/x86_64/airootfs.sfs", "/tmp/tmph2tql947/airootfs") 
+2023-06-16 - 14:18:14 [6]:     .. Finished. Exit code: 0 output:
+ mount: /tmp/tmph2tql947/airootfs: WARNING: source write-protected, mounted read-only.
+2023-06-16 - 14:18:14 [6]:     .. Running ("udevadm", "settle") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("sync") 
+2023-06-16 - 14:18:14 [6]:     .. Running ("unsquashfs", "-l", "/run/archiso/bootmnt/arch/x86_64/airootfs.sfs") 
+
+2023-06-16 - 14:18:15 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:18:15 [6]:     .. Running ("rsync", "-aHAXr", "--filter=-x trusted.overlay.*", "--exclude", "/proc/", "--exclude", "/sys/", "--exclude", "/dev/", "--exclude", "/run/", "--exclude", "/run/udev/", "--exclude", "/sys/firmware/efi/efivars/", "--progress", "/tmp/tmph2tql947/airootfs/", "/tmp/calamares-root-ky4r9hc8") 
+
+2023-06-16 - 14:18:20 [6]: QML Component (default slideshow) Next slide
+
+2023-06-16 - 14:18:25 [6]: QML Component (default slideshow) Next slide
